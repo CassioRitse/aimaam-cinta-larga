@@ -29,8 +29,8 @@ export const HeroSection = () => {
       <Image
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={"/background.jpg"}
-        width={2000}
-        height={2000}
+        width={800}
+        height={800}
         alt={`Foto de cima aldeia`}
       />
 

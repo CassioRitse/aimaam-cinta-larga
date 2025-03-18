@@ -12,7 +12,6 @@ const images = [
   "/carousel/photo6.jpg",
   "/carousel/photo7.jpg",
   "/carousel/photo8.jpg",
-  "/carousel/photo9.jpg",
 ];
 
 export const CarouselSection = () => {
