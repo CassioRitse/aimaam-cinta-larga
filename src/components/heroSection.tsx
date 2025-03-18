@@ -62,8 +62,11 @@ export const HeroSection = () => {
           }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          Bem-vindo à nossa cultura e tradições. Explore os rituais, a história
-          e a beleza da nossa aldeia.
+          Bem-vindo à nossa cultura e tradições. Os indígenas Cinta Larga são um
+          povo originário da Amazônia, mais especificamente da região de
+          Rondônia, Brasil. Este povo faz parte do grupo linguístico Aruak e
+          habita a Reserva Indígena Cinta Larga, localizada principalmente no
+          município de Ariquemes, no estado de Rondônia, Brasil
         </motion.p>
       </motion.div>
     </section>

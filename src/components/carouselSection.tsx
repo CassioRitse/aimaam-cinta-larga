@@ -17,7 +17,9 @@ const images = [
 export const CarouselSection = () => {
   return (
     <div className="max-w-6xl mx-auto py-10 px-4">
-      <h2 className="text-4xl font-bold text-center mb-10">Nossa Galeria</h2>
+      <h2 className="text-4xl font-bold text-center mb-10 text-green-950">
+        Nossa Galeria
+      </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((src, index) => (
           <motion.div

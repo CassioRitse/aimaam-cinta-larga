@@ -32,9 +32,9 @@ export const OrganizationSection = () => {
               maracatiara, pinho, caxeta, Angeli, margoso, cajueiro, pariri,
               castanheira, cacaueira, pama, peroba, jequitibá, seringueira
               <br />
-              Plantas medicinais, frutas nativas, animais silvestres, muitos
-              rios, Rio Roosevelt, Rio Capitão Cardoso, Rio Tenente Marques, Rio
-              Eugênio, Rio das dúvidas, Rio 11 de maio
+              Plantas medicinais, frutas nativas, animais silvestres e rios: Rio
+              Roosevelt, Rio Capitão Cardoso, Rio Tenente Marques, Rio Eugênio,
+              Rio das dúvidas, Rio 11 de maio
             </p>
           </div>
           <Image
@@ -88,7 +88,7 @@ export const OrganizationSection = () => {
                 className="w-full h-64 rounded-lg"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000319.3158008147!2d-60.53624472580773!3d-11.659124393993928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93b7530feb4472bf%3A0x539e2834b07654c7!2sParque%20do%20Aripuan%C3%A3%2C%20Brasil!5e0!3m2!1spt-BR!2spt!4v1742331663474!5m2!1spt-BR!2spt"
                 allowFullScreen
-                loading="lazy"
+                loading="eager"
               ></iframe>
               <br />
               <p>
