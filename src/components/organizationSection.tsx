@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const OrganizationSection = () => {
   // const { ref, inView } = useInView({
@@ -45,12 +46,12 @@ export const OrganizationSection = () => {
 
         {/* Seção Organização Mantenedora */}
         <div
-          className="w-full md:w-1/2 bg-white shadow-lg rounded-lg p-8"
+          className="w-full md:w-1/2 bg-white shadow-lg rounded-lg p-6"
           // initial={{ opacity: 0, x: 50 }}
           // animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
           // transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-green-950">
+          <h2 className="text-4xl font-bold mb-2 text-green-950">
             AIMAAM - ASSOCIAÇÃO INDÍGENA CINTA LARGA
           </h2>
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
@@ -59,11 +60,18 @@ export const OrganizationSection = () => {
             instituições para garantir o crescimento e a sustentabilidade da
             aldeia.
           </p>
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-4">
             <div>
               <h4 className="text-lg font-medium mb-2">Contato</h4>
               <ul className="text-gray-600">
                 <li>CNPJ: 37.574.307/0001-06</li>
+                <li className="bg-green-950 py-2 mt-1 rounded-full text-white">
+                  <div className="flex justify-center items-center gap-2">
+                    <FaWhatsapp></FaWhatsapp>
+                    <p>+55 69 99221-4253</p>
+                  </div>
+                  <p>Dionatan - Presidente da Associação</p>
+                </li>
                 {/* <li>
                   📞{" "}
                   <a href="tel:+550000000000" className="text-blue-600">
