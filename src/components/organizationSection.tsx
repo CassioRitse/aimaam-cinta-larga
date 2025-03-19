@@ -1,17 +1,14 @@
 "use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 
 export const OrganizationSection = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Não dispara apenas uma vez
-    threshold: 0.65, // Ativa quando 65% da seção estiver visível
-  });
+  // const { ref, inView } = useInView({
+  //   triggerOnce: false, // Não dispara apenas uma vez
+  //   threshold: 0.65, // Ativa quando 65% da seção estiver visível
+  // });
 
   return (
-    <div ref={ref} className="w-full py-20 bg-green-950 text-center text-white">
+    <div className="w-full py-20 bg-green-950 text-center text-white">
       <section className="max-w-6xl gap-2 mx-auto px-6 flex flex-col md:flex-row justify-between space-y-10 md:space-y-0">
         <div className="w-full md:w-1/2">
           <div className="relative py-20 px-6 w-full text-justify">
@@ -47,11 +44,11 @@ export const OrganizationSection = () => {
         </div>
 
         {/* Seção Organização Mantenedora */}
-        <motion.div
+        <div
           className="w-full md:w-1/2 bg-white shadow-lg rounded-lg p-8"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
-          transition={{ duration: 0.8 }}
+          // initial={{ opacity: 0, x: 50 }}
+          // animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
+          // transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl font-bold mb-4 text-green-950">
             AIMAAM - ASSOCIAÇÃO INDÍGENA CINTA LARGA
@@ -98,7 +95,7 @@ export const OrganizationSection = () => {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
     </div>
   );
