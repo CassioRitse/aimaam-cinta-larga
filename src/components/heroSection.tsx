@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-export const HeroSection = () => {
+export const HeroSection = ({ id }: { id: string }) => {
   const { ref, inView } = useInView({
     triggerOnce: false, // Não dispara apenas uma vez
     threshold: 0.65, // Ativa quando 50% da seção estiver visível
@@ -13,27 +13,22 @@ export const HeroSection = () => {
   return (
     <section
       ref={ref}
+      id={id}
       className="relative w-full h-screen flex items-center justify-center text-white"
     >
-      {/* <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/videos/hero.mp4" type="video/mp4" />
-        Seu navegador não suporta vídeos.
-      </video> */}
-
+      {/* Imagem de fundo */}
       <Image
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={"/background.jpg"}
         width={800}
         height={800}
-        alt={`Foto de cima aldeia`}
+        alt="Foto da aldeia"
+        priority // Define como prioridade para carregamento rápido
+        placeholder="blur" // Imagem com efeito de blur enquanto carrega
+        blurDataURL={"/background-min.jpg"}
       />
 
+      {/* Filtro escuro */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
 
       <motion.div
@@ -42,6 +37,7 @@ export const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        {/* Título */}
         <motion.h1
           className="text-5xl md:text-6xl font-bold mb-4"
           initial={{ opacity: 0, y: 50 }} // Inicialmente invisível e abaixo
@@ -53,6 +49,8 @@ export const HeroSection = () => {
         >
           AIMMAA Cinta Larga
         </motion.h1>
+
+        {/* Parágrafo */}
         <motion.p
           className="text-lg md:text-xl max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 50 }}
@@ -66,7 +64,7 @@ export const HeroSection = () => {
           povo originário da Amazônia, mais especificamente da região de
           Rondônia, Brasil. Este povo faz parte do grupo linguístico Aruak e
           habita a Reserva Indígena Cinta Larga, localizada principalmente no
-          município de Ariquemes, no estado de Rondônia, Brasil
+          município de Ariquemes, no estado de Rondônia, Brasil.
         </motion.p>
       </motion.div>
     </section>
