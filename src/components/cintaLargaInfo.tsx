@@ -128,4 +128,21 @@ const sections = [
       </>
     ),
   },
+  {
+    id: "alimentacao",
+    title: "5. Alimentação e Produção de Alimentos",
+    content: (
+      <>
+        <p>
+          A alimentação diversificada, baseada em frutos, cereais, raízes,
+          castanhas, carne de animais caçados e peixes. A coleta de castanhas,
+          em particular, tem grande importância não só como alimento, mas também
+          como parte de uma prática cultural que conecta o povo à sua terra.
+          Além disso, o cultivo de cará e banana, alimentos fundamentais na
+          dieta, é uma prática comum que contribui para a segurança alimentar da
+          comunidade.
+        </p>
+      </>
+    ),
+  },
 ];

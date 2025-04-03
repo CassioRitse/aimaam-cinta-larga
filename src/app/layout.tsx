@@ -4,13 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AIMMAA Cinta Larga",
   description: "AIMAAM - ASSOCIAÇÃO INDÍGENA CINTA LARGA",
-  keywords: ["Cinta Larga", "Povos Indígenas", "AIMMAA", "Associação Indígena"],
+  keywords: ["Cinta Larga", "Povos Indígenas", "AIMAAM", "Associação Indígena"],
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    title: "AIMMAA Cinta Larga",
+    title: "AIMAAM Cinta Larga",
     description: "AIMAAM - ASSOCIAÇÃO INDÍGENA CINTA LARGA",
-    siteName: "AIMMAA Cinta Larga",
+    siteName: "AIMAAM Cinta Larga",
   },
 };
 

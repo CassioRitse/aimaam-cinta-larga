@@ -42,8 +42,8 @@ export const GallerySection = ({ id }: { id: string }) => {
             >
               <Image
                 src={src}
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 alt={`Foto ${index + 1} da galeria - Cultura Cinta Larga`}
                 className="w-full h-full object-cover"
                 loading={index === 0 ? "eager" : "lazy"} // Melhor performance

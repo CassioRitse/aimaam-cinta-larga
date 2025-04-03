@@ -47,7 +47,7 @@ export const HeroSection = ({ id }: { id: string }) => {
           }}
           transition={{ duration: 0.8 }} // Duração da animação
         >
-          AIMMAA Cinta Larga
+          AIMAAM Cinta Larga
         </motion.h1>
 
         {/* Parágrafo */}
@@ -62,9 +62,10 @@ export const HeroSection = ({ id }: { id: string }) => {
         >
           Bem-vindo à nossa cultura e tradições. Os indígenas Cinta Larga são um
           povo originário da Amazônia, mais especificamente da região de
-          Rondônia, Brasil. Este povo faz parte do grupo linguístico Aruak e
-          habita a Reserva Indígena Cinta Larga, localizada principalmente no
-          município de Ariquemes, no estado de Rondônia, Brasil.
+          Rondônia, Brasil. Este povo pertence ao grupo linguístico Tupi, mais
+          especificamente ao ramo Tupinambá e habita a Reserva Indígena Cinta
+          Larga, localizada principalmente no município de Espigão do Oeste,
+          Rondônia, Brasil.
         </motion.p>
       </motion.div>
     </section>
