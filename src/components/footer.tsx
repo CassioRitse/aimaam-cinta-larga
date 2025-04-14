@@ -38,7 +38,16 @@ export function Footer() {
                 className="hover:text-green-400 transition"
                 aria-label="Saber mais sobre nós"
               >
-                Sobre
+                Organização
+              </a>
+            </li>
+            <li>
+              <a
+                href="#galery"
+                className="hover:text-green-400 transition"
+                aria-label="Ver galeria de fotos"
+              >
+                Galeria
               </a>
             </li>
             <li>
@@ -47,7 +56,7 @@ export function Footer() {
                 className="hover:text-green-400 transition"
                 aria-label="Ver a história"
               >
-                História
+                Povos Cinta Larga
               </a>
             </li>
           </ul>
@@ -55,8 +64,22 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-sm text-gray-400 text-center md:text-right">
-          &copy; {new Date().getFullYear()} AIMMAA Cinta Larga. Todos os
-          direitos reservados.
+          <p>
+            &copy; {new Date().getFullYear()} AIMAAM Cinta Larga. Todos os
+            direitos reservados.
+          </p>
+
+          <p>
+            Desenvolvido por:{" "}
+            <a
+              href="https://www.linkedin.com/in/c%C3%A1ssioritse/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-500 underline"
+            >
+              Cássio Ritse
+            </a>
+          </p>
         </div>
       </div>
     </footer>

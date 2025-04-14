@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AIMMAA Cinta Larga",
+  title: "AIMAAM Cinta Larga",
   description: "AIMAAM - ASSOCIAÇÃO INDÍGENA CINTA LARGA",
   keywords: ["Cinta Larga", "Povos Indígenas", "AIMAAM", "Associação Indígena"],
   openGraph: {
